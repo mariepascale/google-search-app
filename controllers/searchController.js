@@ -8,7 +8,6 @@ var searchLoader = require('../models/').searchLoader;
 // Returns Rendered Mobile page.
 function SearchController(req, res)
 {
-	console.log("inside S")
 	var _self = this;
 	
 	//return rendered HTML
@@ -23,7 +22,7 @@ function SearchController(req, res)
 SearchController.prototype.render = function(req, res) {
 	var _self = this;
 	var searchData = [];
-	var title = "Search Results";
+	var title = "Google Search:";
 
 	/*if(req.params.searchData){
 		_self.searchData = req.params.searchData;
